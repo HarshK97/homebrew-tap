@@ -5,13 +5,13 @@
 class Diffmantic < Formula
   desc "Structural, semantic diff engine powered by Tree-sitter"
   homepage "https://github.com/HarshK97/diffmantic"
-  version "0.10.0"
+  version "0.11.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/HarshK97/diffmantic/releases/download/v0.10.0/diffmantic_0.10.0_darwin_amd64.tar.gz"
-      sha256 "2691706f686f942838eddefd7cdca6aec976f87ce7e03933e6ab3e43a07dfa3d"
+      url "https://github.com/HarshK97/diffmantic/releases/download/v0.11.0/diffmantic_0.11.0_darwin_amd64.tar.gz"
+      sha256 "2ab83ecb3753d6b28d5fe17efba9c64fd09d99643f3bdd4185df778a7fc3d511"
 
       define_method(:install) do
         bin.install "diffm"
@@ -20,8 +20,8 @@ class Diffmantic < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/HarshK97/diffmantic/releases/download/v0.10.0/diffmantic_0.10.0_darwin_arm64.tar.gz"
-      sha256 "4a2949f8610a1d775f9af9656514c092101f1101045d3fc5f056741aa37d4e12"
+      url "https://github.com/HarshK97/diffmantic/releases/download/v0.11.0/diffmantic_0.11.0_darwin_arm64.tar.gz"
+      sha256 "4b764dd69e717401bbe8c51c7eabfbd4dccff7168edbbfa0894ea571e3148b97"
 
       define_method(:install) do
         bin.install "diffm"
@@ -33,8 +33,8 @@ class Diffmantic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/HarshK97/diffmantic/releases/download/v0.10.0/diffmantic_0.10.0_linux_amd64.tar.gz"
-      sha256 "07dc369d72e4f45ac8d6c2cf5539dac6f4e98ad068ee8a69fc09d396bb057b92"
+      url "https://github.com/HarshK97/diffmantic/releases/download/v0.11.0/diffmantic_0.11.0_linux_amd64.tar.gz"
+      sha256 "75116652f0cedc56144fe19cc6d340723554c73ffc6c0ab9d1b149105c847351"
       define_method(:install) do
         bin.install "diffm"
         man1.install "man/diffm.1"
@@ -42,8 +42,8 @@ class Diffmantic < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/HarshK97/diffmantic/releases/download/v0.10.0/diffmantic_0.10.0_linux_arm64.tar.gz"
-      sha256 "5edc85b39d05a08afa5bb74b007624d694b19ed123a90399ac9f0f3f4b8aad1c"
+      url "https://github.com/HarshK97/diffmantic/releases/download/v0.11.0/diffmantic_0.11.0_linux_arm64.tar.gz"
+      sha256 "5c21f271cd2408cddb052d3c7a26200672dc83ecc6041780cb240cc5181a3d51"
       define_method(:install) do
         bin.install "diffm"
         man1.install "man/diffm.1"
